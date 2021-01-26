@@ -3,60 +3,116 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='styles.css'/>
-  <title>Glenn Ots first website</title>
+  <title>Switchfully my first website</title>
   </head>
   <body>
-    <div class="header">
-    <h1>About Glenn Ots<h1>
-    </div>
-    <div class="navbar">
-      <a href="#">Home</a>
-      <a href="#">Personal life</a>
-      <a href="#">Skills</a>
-      <a href="#" class="right">Social</a>
-    </div>
-      <h2>Personal stuff</h2>
-        <h3> A new page in my life </h3>
-            <p>Hello everyone! I am 25 years old and recently graduated from the Free University
-              Brussels with a masters degree in clinical psychology. It was
-            when I started my internship I felt it wasn't the right direction for me anymore.<br/>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="Index.html">Home</a>
+          </div>
 
-            So that was the moment I knew I had to make a switch before I even started
-            my career. In my studies I have had a lot of statistics so I am used to analysing
-            and even coding.<br/>
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
 
-            This is why switchfully was a <strong> great </strong> opportunity for me to change
-            starting career. <br/>
-            So soon I will become a <em>functional analyst!</em></p><br>
+          <div class="nav-link-wrapper">
+            <a href="topic.html">Topic</a>
+          </div>
+        </div>
 
-            <img src="Fill in link for photo" alt="Photo of me">
-
-        <h3> A healty lifestyle </h3>
-          <p> I have always been very sportive and I still am. From when I was a kid I played football
-            until I went to University. To have a better balance between school and sport, I started
-            to do fitness while maintaining to run a few times a week. When its winter I also like
-            to ride my mountainbike. </p>
-
-      <h2> Skills </h2>
-        <p> A small insight in my IT and analyst skills </p>
-
-        <ul>
-          <li> R. </li>
-          <li> SPSS </li>
-          <li> HTML </li>
-          <li> CSS </li>
-          <li> SQL </li>
-        </ul>
-
-      <h2> Contact </h2>
-          <p> Want to get in touch with me?<br/>
-          Check out these pages down here.</p>
-<a href="https://www.facebook.com/GlennOts2" target="_blank">Facebook</a>
-<a href="www.linkedin.com/in/glenn-ots-02a864191" target="blank">Linkedin</a>
-
-          <div class="footer">
-        <h3>Footer</h3>
+        <div class="Right-side">
+          <div class="brand">
+            <div> GLENN OTS </div>
+          </div>
+        </div>
       </div>
-    </body>
+
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+
+          <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background"> <style="background-image":url(images/photo-2.jpg)>
+                </style>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <img src="images/photo-2.jpg" alt="">
+                </div>
+
+                <div class="subtitle">
+                  Never give up!
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background"> <style="background-image":url(images/IMG_1800.JPG)>
+                </style>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <img src="images/IMG_1800.JPG" alt="" width="370" height="295">
+                </div>
+
+                <div class="subtitle">
+                  Hi, this is me!
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background"> <style="background-image":url(images/photo-4.jpg)>
+                </style>
+              <div class="img-text-wrapper">
+                <div class="logo-wrapper">
+                  <img src="images/photo-4.jpg" alt="">
+                </div>
+
+                <div class="subtitle">
+                  Soon I will be a functional analyst!
+                </div>
+              </div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+<br>
+      <div class="row">
+        <div class="column">
+          <h2>Welcome</h2>
+          <p> Welcome to my first website! Have a look around, I hope you enjoy it!</p>
+        </div>
+      </div>
+
+      <section id="section-contact">
+              <div class="contact">
+                <div class="contact-h3">
+                  <h3>Want to get in touch with me?</h3>
+                </div>
+                      <ul>
+                          <div class="contact-buttons">
+                              <li class="contact-button">
+                                <a href="mailto:glenn-ots@hotmail.com"><img src="images/gmail.png"></a>
+                              </li>
+                              <li class="contact-button">
+                                  <a href="https://github.com/GlennOts" target="_blank"><img src="images/GitHub-Mark-32px.png"></a>
+                              </li>
+                              <li class="contact-button">
+                                  <a href="https://www.linkedin.com/in/glennots/" target="_blank"><img src="images/linkedin-icon.png"></a>
+                              </li>
+                          </div>
+                      </ul>
+              </div>
+          </section>
+        <footer>
+          <p>Copyright © Glenn Ots 2021</p>
+        </footer>
+    </div>
+  </body>
 </html>

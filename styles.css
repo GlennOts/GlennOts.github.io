@@ -1,63 +1,206 @@
-.header {
-  padding: 80px; /* some padding */
-  text-align: center; /* center the text */
-  background: #1abc9c; /* green background */
-  color: white; /* white text color */
-}
-
-/* Increase the font size of the <h1> element */
-.header h1 {
-  font-size: 40px;
-}
+/* Master styles */
 body {
-  color: #414141;               /* Dark gray */
-  background-color: #EEEEEE;    /* Light gray */
-  font-size: 18px;
+  margin: 0px;
+  font-family: "Lato",sans-serif;
+  background-color: lightgray;      /* Houden of niet? */
 }
-p {
-  text-align: left;
+
+.container {
+  display: grid;
+  grid-template: 1fr;
 }
-div {
-  color: #FFF;
-  background-color: #5995DA;
-  font-weight: bold;
-  padding: 20px;
+/* Nav styles */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+  background-color: white;      /* houden of niet */
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent
+  transition: border-bottom 0.5s;
+
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+/* GLENN OTS right side */
+.brand {
+  text-decoration: underline;
+}
+
+/* portfolio styles */
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-text-wrapper {
+  position: absolute;
+  top 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 110%;
   text-align: center;
-  border: 2px solid #5D6063;
-  border-radius: 5px;
-
-  width: 200px;
-  box-sizing: border-box;  /* Add this */
-  margin: 20px auto; /* Vertical  Horizontal */
-}
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden; /* Hide overflow */
-  background-color: #333; /* Dark background color */
+  padding-left: 118px;
+  padding-right: 100px;
 }
 
-/* Style the navigation bar links */
-.navbar a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
+.logo-wrapper img{
+  width: 220px;
+  height: 280px;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
-/* Right-aligned link */
-.navbar a.right {
-  float: right; /* Float a link to the right */
+/* Needs to be more specifict with selector */
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: black;
+}
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
 }
 
-/* Change color on hover/mouse-over */
-.navbar a:hover {
-  background-color: #ddd; /* Grey background color */
-  color: black; /* Black text color */
+/* About page styles */
+.two-column-wrapper {
+  display: grid;
+  margin: 1% 0;
+  grid-template-columns: 0.5fr 1fr;
 }
-.footer {
-  padding: 20px; /* Some padding */
-  text-align: center; /* Center text*/
-  background: #ddd; /* Grey background */
+
+.profile-image-wrapper img {
+  width: 76%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: 65px;
+}
+
+.profile-content-wrapper {
+  padding: 31px;
+}
+
+.profile-content-wrapper h1{
+  color: black;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+  background-color: #ffffff;
+  color: #black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 97%;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+}
+
+/* contact section*/
+section-contact{
+  background-color: lightgray;
+  color: black;
+  padding-top: 5px;
+}
+
+.contact-buttons{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-buttons img {
+  width: 32px;
+  margin: 10px 15px;
+}
+.contact-h3 {
+  text-align: center;
+}
+
+/* Topic styles */
+.topic-h2 {
+  text-align: center;
+}
+.img-3 {
+  float: right;
+}
+.topic-p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* text topics in lu */
+.topic-li {
+  text-align: inherit;
+  margin-top: 10px;
+  margin-right: 20px;
 }
